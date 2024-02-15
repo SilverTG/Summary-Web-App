@@ -1,0 +1,26 @@
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 425px)
+{
+    .head>h1 {
+        font-size: 7em;
+    }
+    .links
+    {
+        top: 23%;
+        width: 100%;
+        justify-content: center;
+        margin: 0;
+    }
+    .nav{position: absolute;
+    bottom: 20px;}
+    .prev{left: 20px;}
+    .next{right: 20px;}
+    .projects{
+        margin: 100px 10px;
+        }
+    .project-box
+    {
+        width: 100%;
+    }
+}

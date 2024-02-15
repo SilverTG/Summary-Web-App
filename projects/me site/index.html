@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Silver Site</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+
+</head>
+<body>
+    <div class="wrapper">
+
+        <section class="contacts">
+            <a href="https://t.me/STGProject" class="telegram-link">
+                <img src="./img/icons/telegram-icon.svg" class="telegram-icon" alt="telegram">
+            </a>
+            <a href="tel:+380687987747" class="phone-link">+380 68 798 77 47</a>
+
+        </section>
+
+
+
+        <!--LEFT BLOCK-->
+        
+        <section class="left-block">
+            
+        <img src="./img/Silver2.jpg" alt="Photo" class="photo">
+        
+            <div>
+                <a href="https://www.linkedin.com/in/nikita-silver/">
+
+                    <img src="./img/icons/linkedin-icon.svg" alt="linkedin-link" class="icons linkedin-link">
+                </a>
+
+                <a href="https://www.facebook.com/nikita.gorodov.5/">
+                    <img src="./img/icons/fb-icon.svg" alt="fb link" class="icons fb-link">
+                </a>
+            </div>
+
+            <div class="left-block-text">
+                <p class="left-block-text-1st-line">2 готовых проекта</p>
+                <p>0.5 года опыта</p>
+            </div>
+            
+            <div>
+                <img src="./img/icons/nodejs-icon.svg" alt="nodejs" class="icons html"> <!-- ТУТ ДОЛЖЕНЬ БЫТЬ HTML -->
+                <img src="./img/icons/react-icon.svg" alt="reactjs" class="icons css"> <!-- ТУТ ДОЛЖЕН БЫТЬ CSS-->
+                <img src="./img/icons/js-icon.svg" alt="JS" class="icons">
+            </div>
+
+            <a class="projects-link" href="https://silvers-resume.netlify.app/"> Мои Работы </a>    
+
+        </section>
+
+
+        <!--CENTRAL BLOCK-->
+        <section class="central-block">
+
+            <h2 class="name">Привет! Я - Silver!</h2>
+            <h1 class="job">Full-stack  Developer</h1>
+            <h3 class="living-place">Живу в  Харькове,Украина</h3>
+            <h3 class="work-place">Работаю удаленно</h3>
+
+            <p class="aboutme">Человек - швейцарский нож. Сделаю все что понадобиться.</p>
+
+            <div>
+                <p class="skills-title">Умею:</p>
+
+                <ul class="skills">
+                    <li class="list-skill-dots"> <span class="list-skill">Управлять IT-проектами и командами;</span> </li>
+                    <li class="list-skill-dots"> <span class="list-skill"> Junior Front End разработчик;</span> </li>
+                    <li class="list-skill-dots"> <span class="list-skill">Junior Back End разработчик;</span> </li>
+                </ul>
+
+            </div>
+
+        </section>
+
+
+        <!--RIGHT BLOCK-->
+        <section class="right-block">
+            <form action="#" class="project-price" data-netlify="true" id="project-price">
+
+            <h4 class="price-title">Стоимость проекта</h4>
+                <div class="project-type-container">
+
+                    <label for="project-type" class="type-site-header">Тип сайта</label>
+
+                    <select name="project-type" id="project-type" class="project-select">
+
+                        <option selected value="landing-page">Landing page</option>
+                        <option value="online-store">Online Store</option>  
+                        <option value="web-application">Web Application</option>
+                        <option value="mobile-application">Mobile Application</option>
+                    </select>
+                </div>
+
+
+                <!--Селектор-->
+                <div class="work-type-container">
+                    <p class="work-type-header">Типы Работ</p>
+
+                    <div class="work-type-item">
+                        <input type="checkbox" name="project-management" id="project-management" class="work-type-checkbox">
+                        <label for="project-management" class="work-type-name">Project management</label>
+                    </div>
+
+                    <div class="work-type-item">
+                        <input type="checkbox" name="design" id="design" class="work-type-checkbox">
+                        <label for="design" class="work-type-name">Design</label>
+                    </div>
+
+                    <div class="work-type-item">
+                        <input type="checkbox" name="development" id="development" class="work-type-checkbox">
+                        <label for="development" class="work-type-name">Development</label>
+                    </div>
+                    <div class="work-type-item">
+                        <input type="checkbox" name="qa" id="qa" class="work-type-checkbox">
+                        <label for="qa" class="work-type-name">QA</label>
+                    </div>
+                </div>
+
+                <div class="project-price-container">
+                    <label for="project-type" class="price-header">Стоимость</label>
+                    <p class="price-sum"> <span class="grn">₴</span> <span id="total-price">0</span> </p>
+                </div>
+
+                <input type="hidden" name="Email">
+
+                <div class="button-container">
+                    <button class="button" id="button">Отправить запрос</button>
+                </div>
+        </form>
+        </section>
+    </div>
+
+
+        <div class="modal-background" id="modal-email">   <!--Включить в класс modal-active что бы вкл модалку-->
+            <div class="modal-container">
+                <button class="close-button" id="close-button">
+                    <img src="./img/icons/close-icon.svg" alt="close" class="close-icon">
+                </button>
+                <img src="./img/icons/mail-icon.svg" alt="email" class="email-icon">
+                <h4 class="remoute-conection">Я свяжусь с вами в течении часа</h4>
+
+                <form action="#" class="modal-container-form" id="email-container">
+
+                    
+                    <div class="email-input-container" id="email-input-container">
+
+                        <label for="user-email" class="email-header">Email</label>
+                        <input type="email" name="user-email" id="user-email" class="user-email" placeholder="Введите свою почту">
+                        <p class="email-error-text" id="email-error-text">Ошибка! Проверьте, правильно ли вписана почта</p>
+                    </div>
+
+                        <div class="button-container">
+                            <button type="submit" class="button" id="button-email   ">Отправить</button>
+                        </div>
+                </form>
+            </div>
+        </div>
+        
+
+
+        <div class="modal-background" id="successes-modal">  <!--Включить в класс modal-active что бы вкл модалку-->
+            <div class="modal-container">
+                <button class="close-button" id="close-button">
+                    <img src="./img/icons/close-icon.svg" alt="close" class="close-icon">
+                </button>
+                <h4 class="remoute-conection">Сообщение отправлено</h4>
+
+                <img src="./img/icons/success-icon.svg" alt="success-icon" class="success-icon">
+
+                <h4 class="remoute-conection">Подождите немного, <br> я скоро с вами свяжусь </h4>
+
+            </div>
+        </div>
+
+        <script src="./js/script.js"></script>
+</body>
+</html>
